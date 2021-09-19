@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Cadastro</title>
+    <style>  
+    
+        h1{
+            text-align:center;
+        }
+        .principal{
+            border-color:darkgreen;
+            width:700px;
+            border-style:solid;
+            text-align:left;
+           
+        }
+        fieldset{
+            background:url("imagens/back.JPG");
+            color:green;
+            border-color:lightgreen; 
+            align-text: center;
+            margin:40px;
+        }
+        legend{
+            border-color:ligthgreen;
+            border-style:solid;
+            background:white;
+            
+        }
+        .f2{
+            float:left;
+            width:260px;
+            height:120px;
+        }
+        .f3{
+            float:right top;
+            width:260px;
+            height:120px;
+        }
+        .f4{
+            float:rigth;
+            width:550px;
+            
+        }
+      
+        }
+        .dados{
+            border-color:green;
+            width:200px;
+            
+        }
+        
+        select{
+            border-color:green;
+            border-width:2px;
+            border-style:solid;
+        }
+        .idade{
+            width:400px;
+        }
+        }
+        button{
+            background:white;
+            border-color:green;
+            border-width:2px;
+            border-style:solid;
+        }
+        textarea{
+            border-color:green;
+        }
+        img{
+            float:right;
+        }
+        #prof{
+            width:75px;
+            height:90px;
+        }
+        #end{
+            width:75px;
+            height:80px;
+        }
+        #eta{
+            width:100px;
+            height:55px;
+            filter:grayscale(100%);
+        }
+        #esp{
+            width:75px;
+            height:80px;
+        }
+        #fala{
+            width:75px;
+            height:80px;
+            filter:grayscale(100%);
+        }
+        #um{
+            float:left;
+            width:200px;
+        }
+        #dois{
+            float:right;
+            width:200px;
+        }
+        
+     </style>
+</head>
+<body>
+    <h1>Questão-3</h1>
+    <form>
+    <fieldset class="principal">
+        <fieldset class="f1">
+            <legend >Cadastro Greral</legend><br>
+                <fieldset class="f2">
+                   <legend>Dados pessoais</legend><br>
+                   <img id="prof"src='imagens/fcd4ba8de8360191d43daf566dd31d08.PNG'>
+                   <label for="nome" class="ldados">Nome completo:</label><br>
+                   <input type="text" id="nome" name="nome" class="dados" required/><br>
+                   <label for="profissao" class="ldados">Profissão:</label><br>
+                   <select name="profissao" id="profissao">
+                      <option value="profissao">Sua profissão</option>
+                      <option value="professor">Professor</option>
+                      <option value="servicos gerais">Serviços Gerais</option>
+                      <option value="secretario">Secretário</option>
+                   </select>
+            </fieldset>
+            <fieldset class="f3"><br>
+               <legend>Localização</legend>
+               <img id="end"src='imagens/google.PNG'>
+               <label for="email" class="ldados">E-mail:</label><br>
+               <input type="email" id="email" name="email" class="dados" required/><br>
+               <label for="rua" class="ldados">Rua:</label><br>
+               <input type="text" id="rua" name="rua" class="dados" required/>
+            </fieldset><br>
+            <fieldset class="f4">
+               <legend>Faixa etária</legend><br>
+               <img id="eta"src='imagens/etaria.PNG'>
+               <div id="um">
+                   <input type="radio" id="ate20" name="idade" value="ate20" class="inradio"/>
+                   <label for="ate20" class="radio">até 20 anos</label><br>
+                   <input type="radio" id="mais20" name="idade" value="mais20"class="inradio"/>
+                   <label for="mais20" class="radio">mais de 20 até 30 anos</label><br>
+                   <input type="radio" id="mais30" name="idade" value="mais30"class="inradio"/>
+                   <label for="mais30" class="radio">mais de 30 até 40 anos</label><br>
+               </div>
+               <div id="dois">
+                   <input type="radio" id="mais40" name="idade" value="mais40"class="inradio"/>                      
+                   <label for="mais40" class="radio">mais de 40 até 50 anos</label> <br>
+                   <input type="radio" id="mais50" name="idade" value="mais50"class="inradio"/>
+                   <label for="mais50" class="radio">mais de 50 até 60 anos</label><br>
+                   <input type="radio" id="mais60" name="idade" value="mais60"class="inradio"/>
+                   <label for="mais60" class="radio"> mais de 60</label> 
+               </div>
+            </fieldset><br>
+            <fieldset class="f4">
+               <legend>Esportes que pratica</legend><br>
+               <img id="esp"src='imagens/esp.PNG'>
+               <input type="checkbox" id="campo" name="esporte" value="campo"/>
+               <label for="campo" class="checkbox">Futebol de campo</label><br>
+               <input type="checkbox" id="salao" name="esporte" value="salao"/>
+               <label for="salao" class="checkbox">Futebol de salão</label><br>
+               <input type="checkbox" id="society" name="esporte" value="society"/>
+               <label for="society" class="checkbox">Futebol society</label><br>
+               <input type="checkbox" id="quadra" name="esporte" value="quadra"/>
+               <label for="quadra" class="checkbox">Volley de quadra</label><br>
+               <input type="checkbox" id="praia" name="esporte" value="praia"/>
+               <label for="praia" class="checkbox">Volley de praia</label><br>
+               <input type="checkbox" id="piscina" name="esporte" value="piscina"/>
+               <label for="piscina" class="checkbox">Natação em piscina</label><br>
+               <input type="checkbox" id="mar" name="esporte" value="mar"/>
+               <label for="mar" class="checkbox"> Natação em mar aberto</label>
+            </fieldset><br>
+            <fieldset class="f4">
+               <legend>Comentário</legend><br>  
+               <img id="fala"src='imagens/fala.PNG'>
+               <label for="mensagem" class="dados">Mensagem:</label><br>
+               <textarea id="mensagem" name="mensagem" rows="5" cols="50" required></textarea>
+            </fieldset><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+    </fieldset>  
+    </form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Aluno</title>
+    <style>
+        body{
+            margin:40px;
+        }
+        fieldset{
+            width:300px;
+        }
+        .campo{
+            float:left;
+            width:50px;
+        }
+        .caixa{
+            width:200px; 
+        }
+        h1{
+            text-align:center;
+        }
+        select{
+            border:solid blue;
+            border-radius:5px;
+            color: black;
+            shadow:blue;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Questão-1</h1>
+    <fieldset >
+    <fieldset>
+        <legend>Dados do Aluno</legend>
+        <label for="nome" class="campo">Nome:</label>
+        <input type="text" id="nome" name="dados" class="caixa" required></input><br>
+        <label for="idade" class="campo">Idade:</label>
+        <input type="number" id="idade" name="dados" min="0" max="170" required></input> 
+    </fieldset>
+    <fieldset>
+        <legend>Área de Atuação</legend>
+        <label for="programação">Programação:</label>
+        <select id="programação">
+        <option value="Front-End">Front-End</option>
+        <option value="Back-End">Back-End</option>
+        <option value="Full-Stack">Full-Stack</option>
+        </select><br>
+       <span> Portifólio de Atuação</span> <br>      
+        <input type="checkbox" id="comercial" name="atuacao" value="comercial">
+        <label for="comercial">Comercial</label><br>
+        <input type="checkbox" id="institucional" name="atuacao" value="Institucional">
+        <label for="institucional">Institucional</label><br>
+        <input type="checkbox" id="blog" name"atuacao" value="blog">
+        <label for="blog">Blog</label><br>
+        <input type="checkbox" id="wiki" name="atuacao" value="wiki">
+        <label for="wiki">Wiki</label><br>
+       
+    </fieldset>
+    </fieldset>
+
+</body>
+</html>

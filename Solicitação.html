@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>solicitacao</title>
+    <style>
+        h1{
+            text-align:center;
+        }
+        fieldset{
+            width:580px;
+            margin:30px;
+        }
+        .conteudo{
+            margin-left:5px;
+        }
+        .dados{
+            float:left;
+            width:170px;
+        }
+        .caixa{
+            width:350px;
+            text-align:left;  
+            height:15px;
+        }
+        button{
+            border-radius:17px;
+            background:green;
+            border:none;
+            padding:10px 20px;
+            color: white;
+        }   
+    </style>
+</head>
+<body>
+    <h1>Questão-2</h1>
+    <form>
+        <fieldset>
+            <div class="conteudo">
+            <!--Text-->
+            <label for="nome" class="dados">Nome</label>
+            <input type="text" id="nome" name="nome" class="caixa" required/><br>
+            <label for="email" class="dados">Email</label>
+            <input type="email" id="email" name="email" class="caixa" required/><br>
+            <!--Radio-->
+            <span class="dados">Tipo</span>
+            <input type="radio" id="tecnico" name="tipo" value="tecnico"/> 
+            <label for="tecnico" >Técnico</label>
+            <input type="radio" id="professor" name="tipo" value="professor"/>
+            <label for="professor" >Professor</label> 
+            <input type="radio" id="aluno" name="tipo" value="aluno"/>
+            <label for="aluno">Aluno</label><br>   
+            <!--Checkbox-->
+            <span class="dados">Setor de Interesse</span> 
+            <input type="checkbox" id="financeiro" name="setor" value="financeiro"/>
+            <label for="financeiro">Financeiro</label>
+            <input type="checkbox" id="informatica" name="setor" value="informatica"/>
+            <label for="informatica">Informatica</label>
+            <input type="checkbox" id="recursos humanos" name="setor" value="recursos humanos"/>
+            <label for="recursos humanos">Recursos Humanos</label><br>
+            <!--Textarea-->
+            <label for="solicitacao" class="dados">Solicitação</label>
+            <textarea id="solicitacao" name="solicitacao" rows="6" cols="47" required></textarea><br>
+            <!--Button-->
+            <button type="submit">Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
